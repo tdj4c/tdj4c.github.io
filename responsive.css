@@ -32,7 +32,7 @@
     display: none;
   }
 
-  .menu-icon{
+  .overlayMenuBtn{
     display: block;
   }
 
@@ -44,3 +44,4 @@
     font-size: 14px;
   }
 }
+
