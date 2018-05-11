@@ -41,12 +41,8 @@ a {
   opacity: 1;
 }
 
-.fa {
-  margin-right: 5px;
-}
-
 header {
-  height: 65px;
+  height: 80px;
   width: 100%;
   background-color: rgba(34, 49, 52, 0.9);
   position :fixed;
@@ -85,14 +81,71 @@ header {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
-.menu-icon {
+/*menu-icon-begin*/
+
+.overlayMenuBtn {
   color: white;
   float: right;
   font-size: 25px;
   padding: 21px 0;
   display: none;
+  cursor: pointer;
 }
 
+.overlayMenuBtn span {
+  position: relative;
+  display: block;
+  width: 40px;
+  border: 1px solid #999;
+  transition: .5s;
+}
+.overlayMenuBtn span:nth-child(1) { top: 0; }
+.overlayMenuBtn span:nth-child(2) { top: 10px; }
+.overlayMenuBtn span:nth-child(3) { top: 20px; }
+
+.overlayMenu {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 100000;
+}
+.overlayMenuInner {
+  padding: 10px 4% 40px 4%;
+}
+
+.overlayMenuHeader {
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  color: #C3A572;
+  font-size: 32px;
+}
+.overlayMenuItem ul {
+  margin: 20px 0 40px 0;
+  padding: 0;
+  list-style-type: none;
+}
+.overlayMenuItem ul li {
+  border-top: 1px solid #ccc;
+}
+.overlayMenuItem ul li:last-child {
+  border-bottom: 1px solid #ccc;
+}
+.overlayMenuItem ul li a {
+  display: block;
+  width: 96%;
+  padding: 20px 0 20px 4%;
+  color: #009170;
+  text-decoration: none;
+  transition: .5s;
+}
+.overlayMenuItem ul li a:hover { background-color: #009170; }
+.overlayMenuItem ul li a:hover { color: #fff; }
+
+/*menu-icon-end*/
 
 .lesson-wrapper {
   padding-bottom: 80px;
@@ -150,3 +203,4 @@ footer {
   padding-top: 30px;
   padding-bottom: 20px;
 }
+
