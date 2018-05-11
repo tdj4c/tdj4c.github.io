@@ -6,10 +6,80 @@
     <title>東大寺学園４年Ｃ組 TOP</title>
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="stylesheet" href="responsive.css">
+    <script src="script.js"></script>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+<!--menu-icon-begin-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script>
+  $(function(){
+    $('.overlayMenuBtn').on('click', function(){
+
+      var $overlay = $('.overlayMenu');
+      var openClass = 'open';
+
+      if( !$overlay.hasClass(openClass) ){
+
+        $('.overlayMenuBtn span:nth-child(1)').css({'transform':'rotate(-45deg)', 'top':'10px'});
+        $('.overlayMenuBtn span:nth-child(2)').css({'opacity':'0'});
+        $('.overlayMenuBtn span:nth-child(3)').css({'transform':'rotate(45deg)', 'top':'8px', 'border': '1px solid #C3A572'});
+
+        $overlay.addClass(openClass);
+        $('body').css( 'overflow', 'hidden');
+        $overlay.fadeIn('slow');
+
+      } else {
+
+        $('.overlayMenuBtn span:nth-child(1)').css({'transform':'rotate(0)', 'top':'0px'});
+        $('.overlayMenuBtn span:nth-child(2)').css({'opacity':'1'});
+        $('.overlayMenuBtn span:nth-child(3)').css({'transform':'rotate(0)', 'top':'20px', 'border': '1px solid #999'});
+
+        $overlay.removeClass(openClass);
+        $('body').css( 'overflow', 'auto');
+        $overlay.fadeOut('slow');
+      }
+
+    });
+  });
+</script>
+
+<!--menu-icon-end-->
+
   </head>
   <body>
+
+    <!--menu-icon-begin-->
+
+    <div class="overlayMenu">
+        <div class="overlayMenuInner">
+          <div class="overlayMenuHeader">
+            <a href="https://tdj4c.github.io/">東大寺学園４年Ｃ組</a>
+          </div>
+          <div class="overlayMenuItem">
+            <ul>
+              <li><a href="#">about</a></li>
+              <li><a href="#">homework</a></li>
+              <li><a href="#">link</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    <!--menu-icon-end-->
+
     <header>
+
+<!--menu-icon-begin-->
+
+<div class="overlayMenuBtn">
+     <span></span>
+     <span></span>
+     <span></span>
+   </div>
+
+<!--menu-icon-end-->
+
       <div class="container">
         <div class="header-left">
           <h2>東大寺学園４年Ｃ組(工事中)</h2>
@@ -23,6 +93,7 @@
         </div>
       </div>
     </header>
+
     <div class="top-wrapper">
       <div class="container">
         <h1>ENABLE SELF-REALIZATION.</h1>
@@ -77,3 +148,4 @@
     </footer>
   </body>
 </html>
+
