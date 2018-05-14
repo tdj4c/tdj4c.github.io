@@ -1,0 +1,194 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic ProN", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.clear {
+  clear: left;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+header {
+  height: 80px;
+  width: 100%;
+  background-color: rgba(34, 49, 52, 0.9);
+  position :fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  width: 124px;
+  margin-top: 20px;
+}
+
+.header-left {
+  float: left;
+}
+
+.header-left h2 {
+  color: white;
+}
+
+.header-right {
+  float: right;
+  margin-right: -25px;
+}
+
+.header-right a {
+  line-height: 65px;
+  padding: 0 25px;
+  color: white;
+  display: block;
+  float: left;
+  transition: all 0.5s;
+}
+
+.header-right a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/*menu-icon-begin*/
+
+.overlayMenuBtn {
+  color: white;
+  float: right;
+  font-size: 25px;
+  padding: 21px 0;
+  display: none;
+  cursor: pointer;
+}
+
+.overlayMenuBtn span {
+  position: relative;
+  display: block;
+  width: 40px;
+  border: 1px solid #999;
+  transition: .5s;
+}
+.overlayMenuBtn span:nth-child(1) { top: 0; }
+.overlayMenuBtn span:nth-child(2) { top: 10px; }
+.overlayMenuBtn span:nth-child(3) { top: 20px; }
+
+.overlayMenu {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 10;
+}
+.overlayMenuInner {
+  padding: 10px 4% 40px 4%;
+}
+
+.overlayMenuHeader {
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  color: #C3A572;
+  font-size: 32px;
+}
+.overlayMenuItem ul {
+  margin: 20px 0 40px 0;
+  padding: 0;
+  list-style-type: none;
+}
+.overlayMenuItem ul li {
+  border-top: 1px solid #ccc;
+}
+.overlayMenuItem ul li:last-child {
+  border-bottom: 1px solid #ccc;
+}
+.overlayMenuItem ul li a {
+  display: block;
+  width: 96%;
+  padding: 20px 0 20px 4%;
+  color: #009170;
+  text-decoration: none;
+  transition: .5s;
+}
+.overlayMenuItem ul li a:hover { background-color: #009170; }
+.overlayMenuItem ul li a:hover { color: #fff; }
+
+/*menu-icon-end*/
+
+.heading {
+  padding-top: 80px;
+  padding-bottom: 50px;
+  color: #5f5d60;
+}
+
+.heading h2 {
+  font-weight: normal;
+  text-decoration: underline;
+}
+
+.lesson {
+  float: left;
+  width: 25%;
+}
+
+.lesson-icon {
+  position: relative;
+}
+
+.lesson-icon p {
+  position: absolute;
+  top: 44%;
+  width: 100%;
+  color: white;
+}
+
+.text-contents {
+  width: 80%;
+  display: inline-block;
+  margin-top: 15px;
+  font-size: 13px;
+  color: #black;
+}
+
+.heading h3 {
+  font-weight: normal;
+}
+
+center {
+  background-color: #f7f7f7;
+}
+
+.link h2 {
+  font-size: 30px;
+  text-decoration: underline;
+  text-align: center;
+  margin-top: 100px;
+}
+
+td .logo {
+  height: 70px;
+  width: 260px;
+}
+
+footer p {
+  color: black;
+  font-size: 20px;
+}
+
+footer {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}

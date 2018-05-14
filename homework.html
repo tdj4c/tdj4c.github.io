@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>東大寺学園４年Ｃ組 homework</title>
+    <link rel="stylesheet" href="stylesheet-homework.css">
+    <link rel="stylesheet" href="responsive-homework.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+<!--menu-icon-begin-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script>
+  $(function(){
+    $('.overlayMenuBtn').on('click', function(){
+
+      var $overlay = $('.overlayMenu');
+      var openClass = 'open';
+
+      if( !$overlay.hasClass(openClass) ){
+
+        $('.overlayMenuBtn span:nth-child(1)').css({'transform':'rotate(-45deg)', 'top':'10px'});
+        $('.overlayMenuBtn span:nth-child(2)').css({'opacity':'0'});
+        $('.overlayMenuBtn span:nth-child(3)').css({'transform':'rotate(45deg)', 'top':'8px', 'border': '1px solid #C3A572'});
+
+        $overlay.addClass(openClass);
+        $('body').css( 'overflow', 'hidden');
+        $overlay.fadeIn('slow');
+
+      } else {
+
+        $('.overlayMenuBtn span:nth-child(1)').css({'transform':'rotate(0)', 'top':'0px'});
+        $('.overlayMenuBtn span:nth-child(2)').css({'opacity':'1'});
+        $('.overlayMenuBtn span:nth-child(3)').css({'transform':'rotate(0)', 'top':'20px', 'border': '1px solid #999'});
+
+        $overlay.removeClass(openClass);
+        $('body').css( 'overflow', 'auto');
+        $overlay.fadeOut('slow');
+      }
+
+    });
+  });
+</script>
+
+<!--menu-icon-end-->
+
+  </head>
+  <body>
+
+    <!--menu-icon-begin-->
+
+    <div class="overlayMenu">
+        <div class="overlayMenuInner">
+          <div class="overlayMenuHeader">
+          </div>
+          <div class="overlayMenuItem">
+            <ul>
+              <li><a href="https://tdj4c.github.io/">top</a></li>
+              <li><a href="#">about</a></li>
+              <li><a href="#">homework</a></li>
+              <li><a href="https://tdj4c.github.io/link.html">link</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    <!--menu-icon-end-->
+
+    <header>
+
+<!--menu-icon-begin-->
+
+<div class="overlayMenuBtn">
+     <span></span>
+     <span></span>
+     <span></span>
+   </div>
+
+<!--menu-icon-end-->
+
+      <div class="container">
+        <div class="header-left">
+          <h2>東大寺学園４年Ｃ組(工事中)</h2>
+        </div>
+
+        <div class="header-right">
+          <a href="https://tdj4c.github.io/">top</a>
+          <a href="#">about</a>
+          <a href="#">homework</a>
+          <a href="https://tdj4c.github.io/link.html" class="login">link</a>
+        </div>
+      </div>
+    </header>
+
+  <div class="link">
+    <h2>homework</h2>
+  </div>
+<!--link-->
+
+<table border="1" align="center">
+　<tr>
+　　<th>教科</th>
+　　<th>期限</th>
+    <th>範囲</th>
+　</tr>
+
+  <tr align="center">
+　　<td>英語2TT</td>
+    <td>4/19</td>
+　　<td><a href="#" alt="#">Self-study work</a></td>
+　</tr>
+
+　<tr align="center">
+　　<td>数学α</td>
+    <td>最終授業</td>
+　　<td>チャートⅡ p342-375</td>
+　</tr>
+
+　<tr align="center">
+      <td>数学β</td>
+  　　<td>テスト当日</td>
+　　  <td>アドプラp36-?</td>
+　</tr>
+
+<tr align="center">
+　　<td>国語</td>
+　　<td>1週間前</td>
+    <td>p4-19(第1-8回)</td>
+　</tr>
+
+<tr align="center">
+　　<td>古文</td>
+　　<td>テスト当日</td>
+    <td>アクセス古文演習 p4-13</td>
+　</tr>
+
+<tr align="center">
+　　<td>化学基礎</td>
+    <td>5/16</td>
+　　<td>リードα 1-17</td>
+　</tr>
+
+<tr align="center">
+　　<td>情報</td>
+　　<td>6/25 16:00</td>
+    <td>修学旅行powerpoint</td>
+　</tr>
+
+</table>
+
+    <!--link-->
+
+    <footer>
+      <div class="container">
+        <p>東大寺学園4年C組</p>
+        <table border="0" cellspacing="0" cellpadding="0"><tr><td align="center"><a href="http://www.rays-counter.com/"><img src="http://www.rays-counter.com/d407_f5_010/5aee6dfa308f8/" alt="アクセスカウンター" border="0"></a></td></tr><tr><td align="center"><img src="http://www.rays-counter.com/images/counter_01.gif" border="0"><img src="http://www.rays-counter.com/images/counter_02.gif" border="0"><img src="http://www.rays-counter.com/images/counter_03.gif" border="0" alt=""><img src="http://www.rays-counter.com/images/counter_04.gif" border="0"><img src="http://www.rays-counter.com/images/counter_05.gif" border="0" ></td></tr></table>
+      </div>
+    </footer>
+  </body>
+</html>
