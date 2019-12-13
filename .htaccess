@@ -1,5 +1,5 @@
 AuthType     Basic
 AuthName     "Administrator"
-AuthUserFile /.htpasswd
+AuthUserFile /tdj4c.github.io/.htpasswd
 require valid-user
 
